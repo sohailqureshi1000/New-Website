@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product img {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+        #featured >div.row.mx-auto.container>nav>ul>li.page-item.active>a{
+            background-color: black;
+        }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+      <div class="container">
+        <img src="Images/img/logo1.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span> <i id="bar" class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About </a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"><i class="fa-solid fa-shopping-bag"></i> Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="featured" class="my-5 py-5">
+      <div class="container mt-5 py-5">
+        <h3>Our Featured</h3>
+        <hr class="">
+        <p>Here You can check out new products with fair prices on rymo.</p>
+      </div>
+      <div class="row mx-auto container">
+        
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/1.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">T-Shirt</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(501, 'T-Shirt', 92, 'Images/img/shop/1.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/2.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Sports Boots </h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(502, 'Sports Boots ', 92, 'Images/img/shop/2.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/3.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Sports Bag</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(503, 'Sports Bag', 92, 'Images/img/shop/3.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/4.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Sports Boots 2</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(504, 'Sports Boots 2', 92, 'Images/img/shop/4.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/5.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Cap</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(505, 'Cap', 92, 'Images/img/shop/5.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/6.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Sweater</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(506, 'Sweater', 92, 'Images/img/shop/6.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/7.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Sports Boots 3</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(507, 'Sports Boots 3', 92, 'Images/img/shop/7.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/8.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Winter Jacket</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(508, 'Winter Jacket', 92, 'Images/img/shop/8.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/9.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Side Bag</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(509, 'Side Bag', 92, 'Images/img/shop/9.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/10.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Wrist Watch</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(510, 'Wrist Watch', 92, 'Images/img/shop/10.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/11.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Hat </h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(511, 'Hat', 92, 'Images/img/shop/11.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/12.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Sports Boots 12</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(512, 'Sports Boots 12', 92, 'Images/img/shop/12.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/13.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">White Watch</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(513, 'White Watch', 92, 'Images/img/shop/13.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/14.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Sports Boots 14</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(514, 'Sports Boots 14', 92, 'Images/img/shop/14.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/15.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">Winter Cap</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(515, 'Winter Cap', 92, 'Images/img/shop/15.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="Images/img/shop/16.jpg" alt="">
+          <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <h5 class="p-name">T-Shirt 2</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn" onclick="addToCart(516, 'T-Shirt 2', 92, 'Images/img/shop/16.jpg')">Add to Cart</button>
+        </div>
+
+       
+      </div>
+    </section>
+
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img src="Images/img/logo2.png" alt="">
+          <p class="pt-3">Fringilla urna porttitor rhoncus dolor purus luctus venenatis lectus magna fringilla diam maecenas ultricies mi eget mauris.</p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Featured</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="#">men</a></li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">boys</a></li>
+            <li><a href="#">girls</a></li>
+            <li><a href="#">new arrivals</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">clothes</a></li>
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Contact US</h5>
+          <div><h6 class="text-uppercase">Address</h6><p>123, STREET NAME , CITY US</p></div>
+          <div><h6 class="text-uppercase">PHONE</h6><p>(123) 456 789</p></div>
+          <div><h6 class="text-uppercase">EMAIL</h6><p>email@example.com</p></div>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Instagram</h5>
+          <div class="row">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/1.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/2.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/3.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/4.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="copyright mt-5">
+        <div class="row container mx-auto">
+          <div class="col-lg-4 col-md-6 col-12 mb-3 mb-md-0"><img src="Images/img/payment.png" alt=""></div>
+          <div class="col-lg-4 col-md-6 col-12 text-center text-md-start mb-3 mb-md-0"><p>rymo eCommerce © 2021. All Rights Reserved</p></div>
+          <div class="col-lg-4 col-md-12 col-12 text-center text-lg-end social-icons ">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

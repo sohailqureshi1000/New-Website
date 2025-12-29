@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login - Rymo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+      <div class="container">
+        <img src="Images/img/logo1.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span><i id="bar" class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+             <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+            <li class="nav-item">
+  <a class="nav-link" href="cart.html"><i class="fa-solid fa-shopping-bag"></i> Cart</a>
+</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="my-5 py-5">
+        <div class="container text-center mt-5 pt-5">
+            <h2 class="form-weight-bold">Login</h2>
+            <hr class="mx-auto">
+        </div>
+        <div class="mx-auto container">
+            <form id="loginForm" class="col-lg-6 offset-lg-3 border p-4 shadow-sm bg-white rounded">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-dark w-100">Login</button>
+                </div>
+                <div class="text-center">
+                    <a href="signup.html" class="text-primary">Don't have account? Register</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+     <footer class="mt-5 py-5 bg-dark text-white">
+        <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img src="Images/img/logo2.png" alt="">
+          <p class="pt-3">Fringilla urna porttitor rhoncus dolor purus luctus venenatis lectus magna fringilla diam maecenas ultricies mi eget mauris.</p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Featured</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="#" class="text-white">men</a></li>
+            <li><a href="#" class="text-white">women</a></li>
+            <li><a href="#" class="text-white">boys</a></li>
+            <li><a href="#" class="text-white">girls</a></li>
+            <li><a href="#" class="text-white">new arrivals</a></li>
+            <li><a href="#" class="text-white">shoes</a></li>
+            <li><a href="#" class="text-white">clothes</a></li>
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Contact US</h5>
+          <div><h6 class="text-uppercase">Address</h6><p>123, STREET NAME , CITY US</p></div>
+          <div><h6 class="text-uppercase">PHONE</h6><p>(123) 456 789</p></div>
+          <div><h6 class="text-uppercase">EMAIL</h6><p>email@example.com</p></div>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Instagram</h5>
+          <div class="row">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/1.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/2.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/3.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/4.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="Images/img/insta/5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="copyright mt-5">
+        <div class="row container mx-auto">
+          <div class="col-lg-4 col-md-6 col-12 mb-3 mb-md-0"><img src="Images/img/payment.png" alt=""></div>
+          <div class="col-lg-4 col-md-6 col-12 text-center text-md-start mb-3 mb-md-0"><p>rymo eCommerce © 2021. All Rights Reserved</p></div>
+          <div class="col-lg-4 col-md-12 col-12 text-center text-lg-end social-icons ">
+            <a href="#" class="text-white mr-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-white mr-2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-white mr-2"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop page from reloading
+
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            // 1. Get users from storage
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+
+            // 2. Find a user that matches BOTH email and password
+            const user = users.find(u => u.email === email && u.password === password);
+
+            if(user) {
+                alert('Login Successful! Welcome back, ' + user.name);
+                // Optional: Store the currently logged in user
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                window.location.href = 'index.html'; // Redirect to home page
+            } else {
+                alert('Invalid Email or Password');
+            }
+        });
+    </script>
+  </body>
+</html>
